@@ -10,23 +10,23 @@ class RoundsController < ApplicationController
         render json: current_round
     end
     
-    def update
-        current_round.update(round_params)
-        render json: current_round
-    end
+    # def update
+    #     current_round.update(round_params)
+    #     render json: current_round
+    # end
     
-    def destroy
-        current_round.destroy
-        render json: round
-    end
+    # def destroy
+    #     current_round.destroy
+    #     render json: round
+    # end
     
-    def create
-        round = Round.create(round_params)
-        render json: round
-    end
+    # def create
+    #     round = Round.create(round_params)
+    #     render json: round
+    # end
 
     def round_params
-        params.permit(:name, :description, :image, abilities_attributes: [ [ :id, :name ] ] )
+        params.permit(:name, :image_url)
     end
     
     def define_current_round

@@ -3,7 +3,7 @@ class QuotesController < ApplicationController
   
     
     def index
-        render json: Dragon.all
+        render json: Quote.all
     end
     
     # def show
