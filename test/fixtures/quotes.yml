@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyString
+  votes: MyString
+  player: one
+  round: one
+
+two:
+  content: MyString
+  votes: MyString
+  player: two
+  round: two
